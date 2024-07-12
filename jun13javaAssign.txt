@@ -1,0 +1,89 @@
+public class Main{
+    public static void main(String[] args){
+
+//five friends name
+        System.out.print("Khushi");
+        System.out.print("Palak");
+        System.out.print("Kartik");
+        System.out.print("Dubey");
+        System.out.print("Yukta");
+    }
+}
+
+Output:
+KhushiPalakKartikDubeyYukta
+
+--------------------------------------------------------------------
+
+public class Main{
+    public static void main(String[] args){
+
+//five countries names (new line )
+        System.out.println("India");
+        System.out.println("America");
+        System.out.println("Japan");
+        System.out.println("Italy");
+        System.out.println("Korea");
+    }
+}
+
+Output:
+India
+America
+Japan
+Italy
+Korea
+
+--------------------------------------------------------------------
+
+public class Main{
+    public static void main(String[] args){
+
+//five fav food name
+        System.out.print("Pasta");
+        System.out.print("Burger");
+        System.out.print("Pizza");
+        System.out.print("Sandwich");
+        System.out.print("Chowmein");
+    }
+}
+
+Output:
+PastaBurgerPizzaSandwichChowmein
+
+--------------------------------------------------------------------
+
+public class Main{
+    public static void main(String[] args){
+
+//five fav city name (new line)
+        System.out.println("Toronto");
+        System.out.println("Miami");
+        System.out.println("Tokyo");
+        System.out.println("Seoul");
+        System.out.println("Vancouver");
+    }
+}
+
+Output:
+Toronto
+Miami
+Tokyo
+Seoul
+Vancouver
+
+--------------------------------------------------------------------
+
+public class Main{
+    public static void main(String[] args){
+
+//five family members name
+        System.out.print("Krishna");
+        System.out.print("Ruchika");
+        System.out.print("Priyanka");
+        System.out.print("Nirmal");
+        System.out.print("Shiv");
+    }
+}
+
+KrishnaRuchikaPriyankaNirmalShiv
