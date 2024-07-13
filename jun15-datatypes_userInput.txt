@@ -1,0 +1,416 @@
+//STATIC:
+
+public class jun_15 {
+    public static void main(String[] args){
+
+        //67
+        int a= 67;
+        System.out.println(a);
+
+--------------------------------------------------------------------
+
+        //2.35
+        float b= 2.35f;
+        System.out.println(b);
+
+--------------------------------------------------------------------
+
+        //w
+        char c= 'w';
+        System.out.println(c);
+
+--------------------------------------------------------------------
+
+        /*12342
+        4.56
+        f
+        -32
+        4.5*/
+        int d1= 12342;
+        float d2= 4.56f;
+        char d3= 'f';
+        int d4= -32;
+        float d5= 4.5f;
+        System.out.println(d1);
+        System.out.println(d2);
+        System.out.println(d3);
+        System.out.println(d4);
+        System.out.println(d5);
+
+--------------------------------------------------------------------
+
+        //34+78
+        int e1= 34;
+        int e2= 78;
+        int e= e1+e2;
+        System.out.println(e);
+
+--------------------------------------------------------------------
+
+        //23-6
+        int f1= 23;
+        int f2= 6;
+        int f= f1-f2;
+        System.out.println(f);
+
+--------------------------------------------------------------------
+
+        //45*2
+        int g1= 45;
+        int g2= 2;
+        int g= g1*g2;
+        System.out.println(g);
+
+--------------------------------------------------------------------
+
+        //56/2
+        int h1= 56;
+        int h2= 2;
+        int h= h1/h2;
+        System.out.println(h);
+
+--------------------------------------------------------------------
+
+        //45+78+23+12
+        int i1=45, i2=78, i3=23, i4=12;
+        int i= i1+i2+i3+i4;
+        System.out.println(i);
+
+--------------------------------------------------------------------
+
+        //56*34+12/2-13
+        int j1=56, j2=34, j3=12, j4=2, j5=13;
+        int j= j1 * j2 + j3 / j4 - j5;
+        System.out.println(j);
+
+--------------------------------------------------------------------
+
+        //1.2*6.7-4.5/2
+        float k1= 1.2f, k2= 6.7f, k3= 4.5f;
+        int k4= 2;
+        float k= k1 * k2 - k3 / k4;
+        System.out.println(k);
+
+--------------------------------------------------------------------
+
+        //1.6*(12-2)/2+7.8-1.5
+        float l1= 1.6f, l4= 7.8f, l5= 1.5f;
+        int l2= 12, l3= 2;
+        float l= l1 * (l2-l3)/l3 + l4 -l5;;
+        System.out.println(l);
+
+--------------------------------------------------------------------
+
+        //4.5*1.2-(82/2)-5.6 +1.234
+        float m1= 4.5f, m2= 1.2f, m5= 5.6f, m6= 1.234f;
+        int m3= 82, m4= 2;
+        float m= m1 * m2 - (m3/m4)- m5 + m6;
+        System.out.println(m);
+
+--------------------------------------------------------------------
+
+        //8*1+(4-2)/1+6
+        int n1=8, n2=1, n3=4, n4=2, n5=6;
+        int n= n1 * n2 + (n3-n4)/ n2 + n5;
+        System.out.println(n);
+
+--------------------------------------------------------------------
+
+        //3.4+1.2*(3.7-1.2)/2+6.8
+        float o1=3.4f, o2=1.2f, o3=3.7f, o5= 6.8f;
+        int o4=2;
+        float o= o1 + o2 * (o3-o2)/ o4 + o5;
+        System.out.println(o);
+
+--------------------------------------------------------------------
+
+        //8.9*1.67-(6.21-5.6)+7.8-34 +157
+        float p1=8.9f, p2= 1.67f, p3=6.21f, p4=5.6f, p5=7.8f;
+        int p6=34, p7=157;
+        float p= p1 * p2 - (p3-p4)+ p5 -p6 +p7;
+        System.out.println(p);
+
+--------------------------------------------------------------------
+
+        //Swap numbers (without third variable)
+        int num1=10;
+        int num2=20;
+        System.out.println("real num1: " + num1);
+        System.out.println("real num2: " + num2);
+        num1= num1 + num2;
+        num2= num1 - num2;
+        num1= num1 - num2;
+        System.out.println("swapped num1: " + num1);
+        System.out.println("swapped num2: " + num2);
+
+--------------------------------------------------------------------
+
+        //Swap numbers (using third variable)
+        int no1=6;
+        int no2=12;
+        System.out.println("real no1: " + no1);
+        System.out.println("real no2: " + no2);
+        int no3=no1;
+        no1 = no2;
+        no2= no3;
+        System.out.println("swapped no1: " + no1);
+        System.out.println("swapped no2: " + no2);
+
+
+    }
+}
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+
+USER INPUT:
+
+
+import java.util.Scanner;
+
+public class jun_15userInput {
+    public static void main(String[] args){
+
+        //User Input of all primitive datatypes
+        Scanner sc= new Scanner(System.in);
+
+        byte by;
+        System.out.print("Enter a byte integer: ");
+        by= sc.nextByte();
+        System.out.println(by);
+
+        short sh;
+        System.out.print("Enter a short integer: ");
+        sh= sc.nextShort();
+        System.out.println(sh);
+
+        int in;
+        System.out.print("Enter an integer: ");
+        in= sc.nextInt();
+        System.out.println(in);
+
+        long lo;
+        System.out.println("Enter a long integer: ");
+        lo= sc.nextLong();
+        System.out.println(lo);
+
+        float fl;
+        System.out.print("Enter a float number: ");
+        fl= sc.nextFloat();
+        System.out.println(fl);
+        
+        double db;
+        System.out.print("Enter a double float number: ");
+        db= sc.nextDouble();
+        System.out.println(db);
+        
+        char ch;
+        System.out.print("Enter a character: ");
+        ch= sc.next().charAt(0);
+        System.out.println(ch);
+        
+        String str;
+        System.out.print("Enter a word/words: ");
+        str= sc.nextLine();
+        System.out.println(str);
+
+
+--------------------------------------------------------------------
+
+        //67
+        int a;
+        System.out.print("Enter a number: ");
+        a= sc.nextInt();
+        System.out.println(a);
+
+--------------------------------------------------------------------
+
+        //2.35
+        float b;
+        System.out.print("Enter a decimal number: ");
+        b= sc.nextFloat();
+        System.out.println(b);
+
+--------------------------------------------------------------------
+
+        //w
+        char c;
+        System.out.print("Enter a character: ");
+        c= sc.next().charAt(0);
+        System.out.println(c);
+
+--------------------------------------------------------------------
+
+        /*12342
+        4.56
+        f
+        -32
+        4.5*/
+        int d1, d4;
+        float d2, d5;
+        char d3;
+        System.out.print("Enter the numbers: ");
+        d1=sc.nextInt();
+        d2=sc.nextFloat();
+        d3=sc.next().charAt(0);
+        d4=sc.nextInt();
+        d5=sc.nextFloat();
+        System.out.println(d1);
+        System.out.println(d2);
+        System.out.println(d3);
+        System.out.println(d4);
+        System.out.println(d5);
+
+--------------------------------------------------------------------
+
+        //34+78
+        int e1, e2, e;
+        System.out.print("Enter the two numbers: ");
+        e1= sc.nextInt();
+        e2=sc.nextInt();
+        e= e1 + e2;
+        System.out.println(e);
+
+--------------------------------------------------------------------
+
+        //23-6
+        int f1, f2, f;
+        System.out.print("Enter the two numbers: ");
+        f1= sc.nextInt();
+        f2=sc.nextInt();
+        f= f1 - f2;
+        System.out.println(f);
+
+--------------------------------------------------------------------
+
+        //45*2
+        int g1, g2, g;
+        System.out.print("Enter the two numbers: ");
+        g1= sc.nextInt();
+        g2=sc.nextInt();
+        g= g1 * g2;
+        System.out.println(g);
+
+--------------------------------------------------------------------
+
+        //56/2
+        int h1, h2, h;
+        System.out.print("Enter the two numbers: ");
+        h1= sc.nextInt();
+        h2=sc.nextInt();
+        h= h1 / h2;
+        System.out.println(h);
+
+--------------------------------------------------------------------
+
+        //45+78+23+12
+        int i1 , i2, i3, i4, i;
+        System.out.print("Enter the four numbers: ");
+        i1= sc.nextInt();
+        i2=sc.nextInt();
+        i3= sc.nextInt();
+        i4=sc.nextInt();
+        i= i1 + i2 + i3 + i4;
+        System.out.println(i);
+
+--------------------------------------------------------------------
+
+        //56*34+12/2-13
+        int j1 , j2, j3, j4, j5, j;
+        System.out.print("Enter the five numbers: ");
+        j1= sc.nextInt();
+        j2=sc.nextInt();
+        j3= sc.nextInt();
+        j4=sc.nextInt();
+        j5=sc.nextInt();
+        j= j1 * j2 + j3/ j4 - j5;
+        System.out.println(j);
+
+--------------------------------------------------------------------
+
+        //1.2*6.7-4.5/2
+        float k1, k2, k3, k;
+        int k4;
+        System.out.print("Enter the four operands: ");
+        k1= sc.nextFloat();
+        k2= sc.nextFloat();
+        k3= sc.nextFloat();
+        k4= sc.nextInt();
+        k = k1 * k2 - k3 / k4;
+        System.out.println(k);
+
+--------------------------------------------------------------------
+
+        //1.6*(12-2)/2+7.8-1.5
+        float l1, l4, l5, l;
+        int l2, l3;
+        System.out.print("Enter the five operands: ");
+        l1= sc.nextFloat();
+        l2= sc.nextInt();
+        l3= sc.nextInt();
+        l4= sc.nextFloat();
+        l5= sc.nextFloat();
+        l = l1 * (l2-l3) / l3 + l4 - l5;
+        System.out.println(l);
+
+--------------------------------------------------------------------
+
+        //4.5*1.2-(82/2)-5.6 +1.234
+        float m1, m2, m5, m6, m;
+        int m3, m4;
+        System.out.print("Enter the six operands: ");
+        m1= sc.nextFloat();
+        m2= sc.nextFloat();
+        m3= sc.nextInt();
+        m4= sc.nextInt();
+        m5= sc.nextFloat();
+        m6= sc.nextFloat();
+        m = m1 * m2 - (m3/m4) - m5 + m6;
+        System.out.println(m);
+
+--------------------------------------------------------------------
+
+        //8*1+(4-2)/1+6
+        int n1, n2, n3, n4, n5, n;
+        System.out.print("Enter the five numbers: ");
+        n1= sc.nextInt();
+        n2=sc.nextInt();
+        n3= sc.nextInt();
+        n4=sc.nextInt();
+        n5=sc.nextInt();
+        n = n1 * n2 + (n3-n4) / n2 + n5;
+        System.out.println(n);
+
+--------------------------------------------------------------------
+
+        //3.4+1.2*(3.7-1.2)/2+6.8
+        float o1, o2, o3, o5, o;
+        int o4;
+        System.out.print("Enter the five numbers: ");
+        o1= sc.nextFloat();
+        o2= sc.nextFloat();
+        o3= sc.nextFloat();
+        o4= sc.nextInt();
+        o5= sc.nextFloat();
+        o = o1 + o2 * (o3-o2) / o4 + o5;
+        System.out.println(o);
+
+--------------------------------------------------------------------
+
+        //8.9*1.67-(6.21-5.6)+7.8-34 +157
+        float p1, p2, p3, p4, p5, p;
+        int p6, p7;
+        System.out.print("Enter the seven numbers: ");
+        p1= sc.nextFloat();
+        p2= sc.nextFloat();
+        p3= sc.nextFloat();
+        p4= sc.nextFloat();
+        p5= sc.nextFloat();
+        p6= sc.nextInt();
+        p7= sc.nextInt();
+        p = p1 * p2 - (p3-p4)+ p5 - p6 + p7;
+        System.out.println(p);
+        
+        
+    }
+}
