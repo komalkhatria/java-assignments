@@ -1,0 +1,468 @@
+import java.util.Scanner;
+
+public class Ifelse {
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+
+
+1)voter id 
+=>user input
+
+        int age;
+        System.out.print("Enter age: ");
+        age= sc.nextInt();
+        if (age>=18){
+            System.out.println("Valid for vote");
+        }
+        else{
+            System.out.println("Not valid for vote");
+        }
+
+Output:
+Enter age: 22
+Valid for vote
+--------------------------------------------------------------------
+
+2)one number max a>10
+one number :
+
+	int a;
+        System.out.print("Enter a number: ");
+        a= sc.nextInt();
+        if(a>10){
+            System.out.println(a + " is maximum");
+        }
+        else{
+            System.out.println(a + " is not maximum");
+        }
+
+Output:
+Enter a number: 12
+12 is maximum
+
+--------------------------------------------------------------------
+
+3)two number max a b 
+a ya b dono mey se bda konsa hey
+
+	int a, b;
+        System.out.print("Enter a: ");
+        a= sc.nextInt();
+        System.out.print("Enter b: ");
+        b= sc.nextInt();
+        if(a>b){
+            System.out.println(a + " is maximum");
+        }
+        else if(b>a){
+            System.out.println(b + " is maximum");
+        }
+        else{
+            System.out.println(a + " and " + b + " are equal");
+        }
+
+Output:
+Enter a: 45
+Enter b: 37
+
+--------------------------------------------------------------------
+
+4)three number max a b c 
+tenno mey se konsa badha hey 
+
+        int a, b, c, max=0;
+        System.out.print("Enter a: ");
+        a= sc.nextInt();
+        System.out.print("Enter b: ");
+        b= sc.nextInt();
+        System.out.print("Enter c: ");
+        c= sc.nextInt();
+        if(a>b && a>c){
+            max=a;
+        }
+        else if(b>a && b>c){
+            max= b;
+        }
+        else if(c>a && c>b){
+            max=c;
+        }
+        else{
+            System.out.println("you entered same numbers");
+        }
+        System.out.println(max + " is maximum");
+
+Output:
+Enter a: 12
+Enter b: 15
+Enter c: 14
+15 is maximum
+
+--------------------------------------------------------------------
+
+5)five number max abcde
+
+	int a, b, c, d, e;
+        System.out.print("Enter a: ");
+        a= sc.nextInt();
+        System.out.print("Enter b: ");
+        b= sc.nextInt();
+        System.out.print("Enter c: ");
+        c= sc.nextInt();
+        System.out.print("Enter d: ");
+        d= sc.nextInt();
+        System.out.print("Enter e: ");
+        e= sc.nextInt();
+
+        if (a>b && a>c && a>d && a>e){
+            System.out.println(a + " is maximum");
+        }
+        else if(b>a && b>c && b>d && b>e){
+            System.out.println(b + " is maximum");
+        }
+        else if(c>a && c>b && c>d && c>e){
+            System.out.println(c + " is maximum");
+        }
+        else if(d>a && d>b && c>d && c>e){
+            System.out.println(d + " is maximum");
+        }
+        else if(d>a && d>b && c>d && c>e){
+            System.out.println(d + " is maximum");
+        }
+        else if(e>a && e>b && e>c && e>d){
+            System.out.println(e + " is maximum");
+        }
+
+Output:
+Enter a: 12
+Enter b: 13
+Enter c: 14
+Enter d: 13
+Enter e: 16
+16 is maximum
+
+--------------------------------------------------------------------
+
+6) user 
+-9 negative integer 
+5 positive integer 
+0 =zero
+
+	int a;
+        System.out.print("Enter a: ");
+        a= sc.nextInt();
+        if(a>0){
+            System.out.println(a + " is a positive integer");
+        }
+        else if(a<0){
+            System.out.println(a + " is a negative integer");
+        }
+        else{
+            System.out.println(a + " is equal to zero");
+        }
+
+Output:
+Enter a: -8
+-8 is a negative integer
+
+--------------------------------------------------------------------
+
+7) vowel and consonat 
+->a e i o u vowel 
+consonant 
+
+	char ch;
+        System.out.print("Enter a character: ");
+        ch= sc.next().charAt(0);
+        if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z')){
+            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'){
+                System.out.println(ch + " is a vowel");
+            }
+            else{
+                System.out.println(ch + " is a consonant");
+            }
+        }
+        else{
+            System.out.println("Entered character is not an alphabet");
+        }
+
+Output:
+Enter a character: j
+j is a consonant
+
+--------------------------------------------------------------------
+
+8)divisible 5 and 11 
+	a)num dono se divide ho jb process ho 
+	b)num kisi se bhi divide ho jb process ho
+
+	int num;
+        System.out.print("Enter a number: ");
+        num= sc.nextInt();
+        if(num%5==0 && num%11==0){
+            System.out.println(num + " is divisible by both 5 and 11");
+        }
+        else if(num%5==0 || num%11==0){
+            System.out.println(num + " is divisible by either 5 or 11");
+        }
+        else{
+            System.out.println(num + " is neither divisible by 5 nor 11");
+        }
+
+Output:
+Enter a number: 55
+55 is divisible by both 5 and 11
+
+
+//second method
+
+
+	int num;
+        System.out.print("Enter a number: ");
+        num= sc.nextInt();
+        if(num%5==0){
+            if(num%11==0){
+                System.out.println(num + " is divisible by both 5 and 11");
+            }
+            else {
+                System.out.println(num + " is only divisible by 5");
+            }
+        }
+        else if(num%11==0){
+            System.out.println(num + " is only divisible by 11");
+        }
+        else{
+            System.out.println(num + " is neither divisible by 5 nor 11");
+        }
+
+Output:
+Enter a number: 22
+22 is only divisible by 11
+
+--------------------------------------------------------------------
+
+9)uper case and lower case input by user 
+A p
+
+
+	char ch;
+        System.out.print("Enter an alphabet: ");
+        ch= sc.next().charAt(0);
+        if(ch>='a' && ch<='z'){
+            System.out.println("lower case input");
+        }
+        else if(ch>='A' && ch<='Z'){
+            System.out.println("upper case input");
+        }
+        else{
+            System.out.println("input is not an alphabet");
+        }
+
+Output:
+Enter an alphabet: P
+upper case input
+
+--------------------------------------------------------------------
+
+10)if the inpute is the integer then check ,check number 7 or 3 k multiple se divisible hey kya
+
+
+	int n;
+        System.out.print("Enter a number: ");
+        n= sc.nextInt();
+        if(n>0){
+            if(n%7==0){
+                if(n%3==0){
+                    System.out.println(n + " is divisible by both 7 and 3");
+                }
+                else{
+                    System.out.println(n + " is only divisible by 7");
+                }
+            }
+            else if(n%3==0){
+                System.out.println(n + " is only divisible by 3");
+            }
+        }
+        else{
+            System.out.println("The user input is not a positive integer");
+        }
+
+Output:
+Enter a number: 14
+14 is only divisible by 7
+
+--------------------------------------------------------------------
+
+11)number swap (two ways )
+//Without using third variable
+
+int n1, n2;
+        System.out.print("Enter number 1: ");
+        n1= sc.nextInt();
+        System.out.print("Enter number 2: ");
+        n2= sc.nextInt();
+        System.out.println("Real num 1 is " + n1 );
+        System.out.println("Real num 2 is " + n2 );
+
+        n1+=n2;
+        n2=n1-n2;
+        n1=n1-n2;
+        System.out.println("Swapped num 1 is " + n1);
+        System.out.println("Swapped num 2 is " + n2);
+
+Output:
+Enter number 1: 12
+Enter number 2: 14
+Real num 1 is 12
+Real num 2 is 14
+Swapped num 1 is 14
+Swapped num 2 is 12
+
+
+//Using third variable
+
+	int n1, n2, n3;
+        System.out.print("Enter number 1: ");
+        n1= sc.nextInt();
+        System.out.print("Enter number 2: ");
+        n2= sc.nextInt();
+        System.out.println("Real num 1 is " + n1 );
+        System.out.println("Real num 2 is " + n2 );
+
+        n3=n1;
+        n1=n2;
+        n2=n3;
+        System.out.println("Swapped num 1 is " + n1);
+        System.out.println("Swapped num 2 is " + n2);
+
+Output:
+Enter number 1: 10
+Enter number 2: 20
+Real num 1 is 10
+Real num 2 is 20
+Swapped num 1 is 20
+Swapped num 2 is 10
+
+--------------------------------------------------------------------
+
+12)m =you are male
+f = female 
+other 
+
+
+	char gender;
+        System.out.print("Enter your gender(M/F/o): ");
+        gender= sc.next().charAt(0);
+        if(gender=='M' || gender=='m'){
+            System.out.println("Male");
+        }
+        else if(gender=='F' || gender=='f'){
+            System.out.println("Female");
+        }
+        else if(gender=='O' || gender=='o'){
+            System.out.println("Others");
+        }
+        else{
+            System.out.println("Enter a valid argument");
+        }
+
+Output:
+Enter your gender(M/F/o): f
+Female
+
+--------------------------------------------------------------------
+
+13) 
+number (WEEK DAYS)
+1 =>sunday 
+2 =>monday 
+3 =>tuesday 
+
+
+	int day;
+        System.out.print("Enter a week day number: ");
+        day= sc.nextInt();
+        if(day==1){
+            System.out.println(day + " => Monday");
+        }
+        else if(day==2){
+            System.out.println(day + " => Tuesday");
+        }
+        else if(day==3){
+            System.out.println(day + " => Wednesday");
+        }
+        else if(day==4){
+            System.out.println(day + " => Thursday");
+        }
+        else if(day==5){
+            System.out.println(day + " => Friday");
+        }
+        else if(day==6){
+            System.out.println(day + " => Saturday");
+        }
+        else if(day==7){
+            System.out.println(day + " => Sunday");
+        }
+        else{
+            System.out.println("Not a valid week day number");
+        }
+
+Output:
+Enter a week day number: 4
+4 => Thursday
+
+--------------------------------------------------------------------
+
+14 )user number 
+check number :even odd 
+
+
+	int num;
+        System.out.print("Enter a number: ");
+        num= sc.nextInt();
+        if(num%2==0){
+            System.out.println(num + " is even");
+        }
+        else{
+            System.out.println(num + " is odd");
+        }
+
+Output:
+Enter a number: 89
+89 is odd
+
+--------------------------------------------------------------------
+
+15)
+char match 
+a =>apple 
+b :ball 
+c :cat 
+not match 
+
+
+	char ch;
+        System.out.print("Enter an alphabet: ");
+        ch= sc.next().charAt(0);
+        if(ch=='a' || ch=='A'){
+            System.out.println("Apple");
+        }
+        else if(ch=='b' || ch=='B'){
+            System.out.println("Ball");
+        }
+        else if(ch=='c' || ch=='C'){
+            System.out.println("Cat");
+        }
+        else{
+            System.out.println("Not match");
+        }
+
+Output:
+Enter an alphabet: b
+Ball
+
+
+--------------------------------------------------------------------
+
+
+    }
+}
