@@ -1,0 +1,307 @@
+import java.util.Scanner;
+public class Ifelse {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+
+Question 1: Tax Calculator
+
+        float income, finalIncome;
+        float tax=0;
+        System.out.println("Enter your income: ");
+        income= sc.nextInt();
+        if(income<=10000){
+            tax=0;
+        }
+        else if(income>10000 && income<=30000){
+            tax = (income * 10)/100;
+        }
+        else if(income>30000 && income<=50000){
+            tax = (income * 20)/100;
+        }
+        else if(income>50000){
+            tax = (income * 30)/100;
+        }
+        System.out.println("Tax = " + tax);
+        finalIncome= income-tax;
+        System.out.println("Income after deducting tax: " + finalIncome);
+
+
+Output:
+Enter your income: 25000
+Tax = 2500.0
+Income after deducting tax: 22500.0
+
+--------------------------------------------------------------------
+
+Question 2: BMI Calculator
+
+        float height, weight, bmi;
+        System.out.print("Enter your height (in meter): ");
+        height= sc.nextFloat();
+        System.out.print("Enter your weight (in kg): ");
+        weight= sc.nextFloat();
+        bmi= weight/(height*height);
+        System.out.println("BMI = " + bmi);
+
+        if(bmi<18.5){
+            System.out.println("Underweight");
+        }
+        else if(bmi>18.5 && bmi<24.9){
+            System.out.println("Normal weight");
+        }
+        else if(bmi>=25 && bmi<29.9){
+            System.out.println("Overweight");
+        }
+        else{
+            System.out.println("obesity");
+        }
+
+
+Output:
+Enter your height (in meter): 1.80
+Enter your weight (in kg): 68
+BMI = 20.987656
+Normal weight
+
+--------------------------------------------------------------------
+
+Question 3: Leap Year Checker
+//REVIEW
+
+	int year;
+        System.out.print("Enter year: ");
+        year= sc.nextInt();
+        if(year%4==0 && year%100!=0){
+            System.out.println(year + " is a leap year");
+        }
+        else{
+            System.out.println(year + " is not a leap year");
+        }
+
+Output:
+Enter year: 2024
+2024 is a leap year
+
+--------------------------------------------------------------------
+
+Question 4: Time of Day Greeting
+
+        int time;
+        String name;
+        System.out.println("Enter time (0-24): ");
+        time= sc.nextInt();
+        System.out.println("Enter your name: ");
+        name= sc.next();
+        if(time>0 && time<12){
+            System.out.println("Good Morning, " + name);
+        }
+        else if(time>=12 && time<=15){
+            System.out.println("Good afternoon, " + name);
+        }
+        else if(time>15 && time<=20){
+            System.out.println("Good evening, " + name);
+        }
+        else if(time>20 && time<=24){
+            System.out.println("Good night, " + name);
+        }
+        else{
+            System.out.println("Wrong input");
+        }
+
+
+Output:
+Enter time (0-24): 
+6
+Enter your name: 
+Komal
+Good Morning, Komal
+
+--------------------------------------------------------------------
+
+Question 5: Menu Selection
+
+
+        System.out.println("Select Menu category: \n 1:Rajasthani  2: South Indian  3: Chinese  4: Italian");
+        int n;
+
+        n= sc.nextInt();
+
+        if(n==1){
+            System.out.println("Rajasthani Food:\n Upma - Rs.40\n Poha - Rs.40\n Poori Sabzi - Rs.60\n Dal, bati, churma - Rs.120\n");
+        }
+
+        else if(n==2){
+            System.out.println("South Indian Food:\n Uttapam - Rs.40\n Sambhar Vada - Rs.40\n Idli Sambhar - Rs.60\n Dosa, Rassam, Sambhar - Rs.120\n");
+        }
+
+        else if(n==3){
+            System.out.println("Chinese Food:\n Chowmein - Rs.40\n Fried Dumpling - Rs.40\n Spring Rolls - Rs.60\n Dimsum - Rs.120\n");
+        }
+
+        else if(n==4){
+            System.out.println("Italian Food:\n Burrata - Rs.40\n Garlic Bread - Rs.40\n Pasta - Rs.60\n Napolitan Pizza - Rs.120\n");
+        }
+
+        else{
+            System.out.println("Select valid category(1-4)");
+        }
+
+
+Output:
+Select Menu category: 
+ 1:Rajasthani  2: South Indian  3: Chinese  4: Italian
+2
+South Indian Food:
+ Uttapam - Rs.40
+ Sambhar Vada - Rs.40
+ Idli Sambhar - Rs.60
+ Dosa, Rassam, Sambhar - Rs.120
+
+--------------------------------------------------------------------
+
+Question 6: Temperature Converter
+
+        char input;
+        float temp, convert;
+        System.out.print("Input temperature in Celcius/Fahrenheit(Type C/F): ");
+        input= sc.next().charAt(0);
+
+        if(input=='C' || input=='c'){
+            System.out.print("Enter temperature in "+ input + " : ");
+            temp= sc.nextFloat();
+            convert= (temp * 9)/5 + 32;
+            System.out.println(temp + "" + input + " = " + convert + "F");
+        }
+        else if(input=='F' || input=='f'){
+            System.out.print("Enter temperature in "+ input + " : ");
+            temp= sc.nextFloat();
+            convert= (temp-32) * 5/9;
+            System.out.println(temp + "" + input + " = " + convert + "C");
+        }
+        else{
+            System.out.println("Invalid temperature type");
+        }
+
+Output:
+Input temperature in Celcius/Fahrenheit(Type C/F): f
+Enter temperature in f : 93
+93.0f = 33.88889C
+
+--------------------------------------------------------------------
+
+Question 7: Number Comparison
+
+        int n1, n2;
+        System.out.print("Enter number 1: ");
+        n1= sc.nextInt();
+        System.out.print("Enter number 2: ");
+        n2= sc.nextInt();
+        if(n1>n2){
+            System.out.println(n1 + " is greater");
+        }
+        else if (n2 > n1) {
+
+            System.out.println(n2 + " is greater");
+        }
+        else{
+            System.out.println("both numbers are equal");
+        }
+
+Output:
+Enter number 1: 56
+Enter number 2: 72
+72 is greater
+
+--------------------------------------------------------------------
+
+Question 8: Ticket Booking System
+
+	int age, ticketPrice= 150;
+        float dis, ticketAmt;
+        System.out.println("Ticket price is Rs.150");
+        System.out.print("Enter age: ");
+        age= sc.nextInt();
+        if(age<12){
+            dis= ticketPrice * 0.5f;
+        }
+        else if(age>=65){
+            dis= ticketPrice * 0.3f;
+        }
+        else{
+            dis=0;
+        }
+        System.out.println("Discount= Rs. " + dis);
+        ticketAmt= ticketPrice - dis;
+        System.out.println("Amount to pay= Rs. " + ticketAmt);
+
+
+Output:
+Ticket price is Rs.150
+Enter age: 68
+Discount= Rs. 45.0
+Amount to pay= Rs. 105.0
+
+--------------------------------------------------------------------
+
+Question 9: Letter Grade Calculator
+
+        float score;
+        char grade= 'E';
+        System.out.print("Enter your score out of 100: ");
+        score= sc.nextFloat();
+
+        if(score>=0 && score<=100){
+            if(score>=90 && score<=100){
+                grade= 'A';
+            }
+            else if(score>=80 && score<=89){
+                grade='B';
+            }
+            else if(score>=70 && score<=79){
+                grade='C';
+            }
+            else if(score>=60 && score<=69){
+                grade='D';
+            }
+            else if(score<=59){
+                grade='E';
+            }
+            System.out.println("Your grade is "+ grade);
+        }
+        else{
+            System.out.println("Enter valid score(0-100)");;
+        }
+
+Output:
+Enter your score out of 100: 72
+Your grade is C
+
+--------------------------------------------------------------------
+
+Question 10: Vowel or Consonant Checker
+
+	char ch;
+        System.out.print("Enter an alphabet: ");
+        ch= sc.next().charAt(0);
+
+        if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z')){
+            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'){
+                System.out.println(ch + " is a vowel");
+            }
+            else{
+                System.out.println(ch + " is a consonant");
+            }
+        }
+        else{
+            System.out.println(ch + " is not an alphabet");
+        }
+
+Output:
+Enter an alphabet: j
+j is a consonant
+
+
+
+    }
+}
