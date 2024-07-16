@@ -1,0 +1,856 @@
+import java.util.Scanner;
+public class While {
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+
+
+1)Write a program to print numbers from 1 to 10.
+
+        for(int i=1; i<=10; i++){
+            System.out.println(i);
+        }
+
+Output:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+--------------------------------------------------------------------
+
+2)Write a program to calculate the sum of first 10 natural number.
+
+	int sum=0;
+        for(int i=1; i<=10; i++){
+            sum +=i;
+        }
+        System.out.println(sum);
+
+Output:
+55
+--------------------------------------------------------------------
+
+3)Write a program that prompts the user to input a positive integer.
+It should then print the multiplication table of that number. 
+
+	int n, mul;
+        System.out.println("Enter a positive number: ");
+        n= sc.nextInt();
+        if(n>0){
+            for(int i=1; i<=10; i++){
+                mul= n *i;
+                System.out.println(mul);
+            }
+        }
+        else{
+            System.out.println("Error! Enter a positive number");
+        }
+
+Output:
+Enter a positive number: 
+8
+8
+16
+24
+32
+40
+48
+56
+64
+72
+80
+
+--------------------------------------------------------------------
+
+4)Write a program to find the factorial value of any number entered through the keyboard.
+
+	int n, fact= 1;
+        System.out.print("Enter a number: " );
+        n= sc.nextInt();
+        for(int i=n; i>=1; i--){
+            fact= fact* i;
+        }
+        System.out.println("Factorial of " + n + " is " + fact);
+
+Output:
+Enter a number: 5
+Factorial of 5 is 120
+
+--------------------------------------------------------------------
+
+5)1--->100 number print 
+
+	for(int i=1; i<=100; i++){
+            System.out.println(i);
+        }
+
+--------------------------------------------------------------------
+
+6)100--->1 number print 
+
+	for(int i=100; i>=1; i--){
+            System.out.println(i);
+        }
+
+--------------------------------------------------------------------
+
+7)1--->100 even number print sum
+
+	int sum=0;
+        for(int i=1; i<=100; i++){
+            if(i%2==0){
+                sum +=i;
+            }
+        }
+        System.out.println(sum);
+
+Output:
+2550
+
+--------------------------------------------------------------------
+
+8)100---->1odd number print sum
+
+	int sum=0;
+        for(int i=100; i>=1; i--){
+            if(i%2==1){
+                sum +=i;
+            }
+        }
+        System.out.println(sum);
+
+Output:
+2500
+
+--------------------------------------------------------------------
+
+9)50--->1000 even number sum
+
+	int sum=0;
+        for(int i=50; i<=1000; i++){
+            if(i%2==0){
+                sum +=i;
+            }
+        }
+        System.out.println(sum);
+
+Output:
+249900
+
+--------------------------------------------------------------------
+
+10)1000--->500 odd numbers sum
+
+	int sum=0;
+        for(int i=1000; i>=500; i--){
+            if(i%2==1){
+                sum +=i;
+            }
+        }
+        System.out.println(sum);
+
+Output:
+187500
+
+--------------------------------------------------------------------
+
+average level: 
+
+1)table 2 to 10 
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+
+        for(int n=2; n<=10; n++){
+            for(int i=1; i<=10; i++){
+                System.out.println(n + " * " + i + " = " + n*i);
+            }
+            System.out.println();
+        }
+
+    }
+}
+
+Output:
+2 * 1 = 2
+2 * 2 = 4
+2 * 3 = 6
+2 * 4 = 8
+2 * 5 = 10
+2 * 6 = 12
+2 * 7 = 14
+2 * 8 = 16
+2 * 9 = 18
+2 * 10 = 20
+
+3 * 1 = 3
+3 * 2 = 6
+3 * 3 = 9
+3 * 4 = 12
+3 * 5 = 15
+3 * 6 = 18
+3 * 7 = 21
+3 * 8 = 24
+3 * 9 = 27
+3 * 10 = 30
+
+4 * 1 = 4
+4 * 2 = 8
+4 * 3 = 12
+4 * 4 = 16
+4 * 5 = 20
+4 * 6 = 24
+4 * 7 = 28
+4 * 8 = 32
+4 * 9 = 36
+4 * 10 = 40
+
+5 * 1 = 5
+5 * 2 = 10
+5 * 3 = 15
+5 * 4 = 20
+5 * 5 = 25
+5 * 6 = 30
+5 * 7 = 35
+5 * 8 = 40
+5 * 9 = 45
+5 * 10 = 50
+
+6 * 1 = 6
+6 * 2 = 12
+6 * 3 = 18
+6 * 4 = 24
+6 * 5 = 30
+6 * 6 = 36
+6 * 7 = 42
+6 * 8 = 48
+6 * 9 = 54
+6 * 10 = 60
+
+7 * 1 = 7
+7 * 2 = 14
+7 * 3 = 21
+7 * 4 = 28
+7 * 5 = 35
+7 * 6 = 42
+7 * 7 = 49
+7 * 8 = 56
+7 * 9 = 63
+7 * 10 = 70
+
+8 * 1 = 8
+8 * 2 = 16
+8 * 3 = 24
+8 * 4 = 32
+8 * 5 = 40
+8 * 6 = 48
+8 * 7 = 56
+8 * 8 = 64
+8 * 9 = 72
+8 * 10 = 80
+
+9 * 1 = 9
+9 * 2 = 18
+9 * 3 = 27
+9 * 4 = 36
+9 * 5 = 45
+9 * 6 = 54
+9 * 7 = 63
+9 * 8 = 72
+9 * 9 = 81
+9 * 10 = 90
+
+10 * 1 = 10
+10 * 2 = 20
+10 * 3 = 30
+10 * 4 = 40
+10 * 5 = 50
+10 * 6 = 60
+10 * 7 = 70
+10 * 8 = 80
+10 * 9 = 90
+10 * 10 = 100
+
+--------------------------------------------------------------------
+	
+2)table print between range from user input 
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+
+        int r1, r2;
+        System.out.print("Enter starting and ending number: ");
+        r1= sc.nextInt();
+        r2= sc.nextInt();
+        for(int n=r1; n<=r2; n++){
+            for(int i=1; i<=10; i++){
+                System.out.println(n + " * " + i + " = " + n*i);
+            }
+            System.out.println();
+        }
+
+    }
+}
+
+
+Output:
+Enter starting and ending number: 4 8
+4 * 1 = 4
+4 * 2 = 8
+4 * 3 = 12
+4 * 4 = 16
+4 * 5 = 20
+4 * 6 = 24
+4 * 7 = 28
+4 * 8 = 32
+4 * 9 = 36
+4 * 10 = 40
+
+5 * 1 = 5
+5 * 2 = 10
+5 * 3 = 15
+5 * 4 = 20
+5 * 5 = 25
+5 * 6 = 30
+5 * 7 = 35
+5 * 8 = 40
+5 * 9 = 45
+5 * 10 = 50
+
+6 * 1 = 6
+6 * 2 = 12
+6 * 3 = 18
+6 * 4 = 24
+6 * 5 = 30
+6 * 6 = 36
+6 * 7 = 42
+6 * 8 = 48
+6 * 9 = 54
+6 * 10 = 60
+
+7 * 1 = 7
+7 * 2 = 14
+7 * 3 = 21
+7 * 4 = 28
+7 * 5 = 35
+7 * 6 = 42
+7 * 7 = 49
+7 * 8 = 56
+7 * 9 = 63
+7 * 10 = 70
+
+8 * 1 = 8
+8 * 2 = 16
+8 * 3 = 24
+8 * 4 = 32
+8 * 5 = 40
+8 * 6 = 48
+8 * 7 = 56
+8 * 8 = 64
+8 * 9 = 72
+8 * 10 = 80
+
+--------------------------------------------------------------------
+
+3)1-->100 those type of numbers print (divisible by the multiple of any two numbers from user input ) 
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+
+        int r1, r2;
+        System.out.print("Enter starting and ending number: ");
+        r1= sc.nextInt();
+        r2= sc.nextInt();
+        for(int i=1; i<=100; i++){
+            if(i%(r1*r2)==0){
+                System.out.println(i);
+            }
+        }
+
+    }
+}
+
+
+Output:
+Enter starting and ending number: 4
+7
+28
+56
+84
+
+--------------------------------------------------------------------
+
+4)1--->100 print numbers id divisible by 11and 5 both 
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+
+        for(int i=1; i<=100; i++){
+            if(i%55==0){
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+Output:
+55
+
+--------------------------------------------------------------------
+
+5)print 2 table opposite 
+like : 20 18 16.......2 
+
+public class Test {
+    public static void main(String[] args){
+
+        for(int i=10; i>=1; i--){
+            System.out.println(2 + " * " + i + " = " + 2*i);
+        }
+    }
+}
+
+Output:
+2 * 10 = 20
+2 * 9 = 18
+2 * 8 = 16
+2 * 7 = 14
+2 * 6 = 12
+2 * 5 = 10
+2 * 4 = 8
+2 * 3 = 6
+2 * 2 = 4
+2 * 1 = 2
+
+--------------------------------------------------------------------
+
+6)print 2 table : 
+like this format : 
+2 X 1 =2 
+2 X 2 =4 
+
+public class Test {
+    public static void main(String[] args){
+
+        for(int i=1; i<=10; i++){
+            System.out.println(2 + " * " + i + " = " + 2*i);
+        }
+    }
+}
+
+Output:
+2 * 1 = 2
+2 * 2 = 4
+2 * 3 = 6
+2 * 4 = 8
+2 * 5 = 10
+2 * 6 = 12
+2 * 7 = 14
+2 * 8 = 16
+2 * 9 = 18
+2 * 10 = 20
+
+--------------------------------------------------------------------
+
+7)write and make a program user input armstrong = then check number is armstrong and not , when user input pallindrome =check number is pallindrome or not , when user input reverse then check number is reverse or not (through user input ) (use if else if else and while loop and for loop only ) 
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+
+        int n, rem, sum=0;
+        System.out.print("Enter a number: ");
+        n= sc.nextInt();
+        int num=n, rrem, rnum=0;
+        String check;
+        System.out.print("Check armstrong/ pallindrome/ reverse: ");
+        check= sc.next();
+
+        if(check.equals("armstrong")){
+            while(n>0){
+                rem= n%10;
+                sum= sum + rem*rem*rem;
+                n= n/10;
+            }
+            if(sum==num){
+                System.out.println(num + " is an armstrong number");
+            }
+            else{
+                System.out.println(num + " is not an armstrong number");
+            }
+        }
+
+        else if(check.equals("pallindrome")){
+            while(n>0){
+                rem= n%10;
+                sum= sum*10 + rem;
+                n= n/10;
+            }
+            if(sum==num){
+                System.out.println(num + " is a pallindrome number");
+            }
+            else{
+                System.out.println(num + " is not a pallindrome number");
+            }
+        }
+
+        else if(check.equals("reverse")){
+            while(n>0){
+                rem= n%10;
+                sum= sum*10 + rem;
+                n= n/10;
+            }
+            System.out.println("Reverse of " + num + " is " + sum);
+            int nsum=sum;
+            while(sum>0){
+                rrem= sum%10;
+                rnum= rnum*10 + rrem;
+                sum= sum/10;
+            }
+            if(rnum==num){
+                System.out.println(nsum + " is the reverse of " + num);
+            }
+            else{
+                System.out.println(nsum + " is not the reverse of " + num);
+            }
+        }
+
+        else{
+            System.out.println("Input mismatch");
+        }
+    }
+}
+
+
+Output:
+Enter a number: 12321
+Check armstrong/ pallindrome/ reverse: pallindrome
+12321 is a pallindrome number
+
+--------------------------------------------------------------------
+
+8) write and make a program user input any number and user input like factorial then calculate a factorial of code and user input a string like reverse then calculate a reverse number only.
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+
+        int n, rem, sum=0, i=1, fact=1;
+        System.out.print("Enter a number: ");
+        n= sc.nextInt();
+        int num=n;
+        String option;
+        System.out.print("Choose factorial/ reverse: ");
+        option= sc.next();
+
+        if(option.equals("factorial")){
+            while(i<=n){
+                fact= fact * i;
+                i++;
+            }
+            System.out.println("Factorial of " + n + " is " + fact);
+        }
+        else if(option.equals("reverse")){
+            while(n>0){
+                rem= n%10;
+                sum= sum*10 + rem;
+                n= n/10;
+            }
+            System.out.println("Reverse of " + num + " is " + sum);
+        }
+
+    }
+}
+
+Output:
+Enter a number: 8
+Choose factorial/ reverse: factorial
+Factorial of 8 is 40320
+
+--------------------------------------------------------------------
+
+9)write and make a program user give two string like even and odd even denoted even number and odd denoted odd number when user input odd then input a range and calculate even and odd number in java ?(use if else if and for loop)
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+        int r1, r2;
+        String input;
+        System.out.print("Choose even/ odd: ");
+        input= sc.next();
+        if(input.equals("even")){
+            System.out.print("Enter range start: ");
+            r1= sc.nextInt();
+            System.out.print("Enter range end: ");
+            r2= sc.nextInt();
+            for(int i=r1; i<=r2; i++){
+                if(i%2==0){
+                    System.out.print(i + " ");
+                }
+            }
+        }
+        else if(input.equals("odd")){
+            System.out.print("Enter range start: ");
+            r1= sc.nextInt();
+            System.out.print("Enter range end: ");
+            r2= sc.nextInt();
+            for(int i=r1; i<=r2; i++){
+                if(i%2==1){
+                    System.out.print(i + " ");
+                }
+            }
+        }
+    }
+}
+
+Output:
+Choose even/ odd: even
+Enter range start: 5
+Enter range end: 21
+6 8 10 12 14 16 18 20 
+ 
+--------------------------------------------------------------------
+
+10)write a java prgram user input neon number :then calucate neon number or user input perfect number then calculate perfect number or user input prime number then agin user input is one or more when a user input one then check a input is prime or not otherwise userinput more then print 1 to 100 prime numbers or when user input a one digit the user input again : count ya sumofdigit when a user input count then count the digit and user input sumofdigit then addition of all the digits when user input fibonacci the user again input to lastnumber ya series of nth term when user input last number then print last number of a sum of fibonacci and user input a series then print a series of fibonacci	
+
+
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+        String input, input2;
+        int n, n2, sq, rem, sum=0, count=0;
+        System.out.print("Choose neon/ perfect/ prime/ operations/ fibonacci: ");
+        input= sc.next();
+        if(input.equals("neon")){
+            System.out.print("Enter a number: ");
+            n= sc.nextInt();
+            sq= n *n;
+            int num= n;
+            while(sq >0){
+                rem= sq%10;
+                sum= sum + rem;
+                sq= sq/10;
+            }
+            if(sum==num){
+                System.out.println(num + " is a neon number");
+            }
+            else{
+                System.out.println(num + " is not a neon number");
+            }
+        }
+
+        else if(input.equals("perfect")){
+            System.out.print("Enter a number: ");
+            n= sc.nextInt();
+            for(int i=1; i<n; i++){
+                if(n%i==0){
+                    sum= sum + i;
+                }
+            }
+            if(sum==n){
+                System.out.println(n + " is a perfect number");
+            }
+            else{
+                System.out.println(n + " is not a perfect number");
+            }
+        }
+
+        else if(input.equals("prime")){
+            System.out.print("Enter a number: ");
+            n=sc.nextInt();
+            if(n==1){
+                System.out.print("Enter a number: ");
+                n2= sc.nextInt();
+                for(int i=2; i<n2; i++){
+                    if(n2%i!=0){
+                        System.out.println(n2 + " is a prime number");
+                        break;
+                    }else{
+                        System.out.println(n2 + " is not a prime number");
+                        break;
+                    }
+                }
+            }
+            else if(n!=1){
+                for(int i=2; i<=100; i++){
+                    int flag=0;
+                    for(int j=2; j<i; j++){
+                        if(i%j==0){
+                            flag=1;
+                        }
+                    }
+                    if (flag==0){
+                        System.out.println(i + " ");
+                    }
+                }
+            }
+        }
+
+        else if(input.equals("operations")){
+            System.out.print("Enter a number: ");
+            n= sc.nextInt();
+            n2=n;
+            System.out.print("Choose count/sumofdigits: ");
+            input2= sc.next();
+            if(input2.equals("count")){
+                while(n>0){
+                    n=n/10;
+                    count++;
+                }
+                System.out.print("No of digits in " + n2 + " is " + count);
+            }
+            else if(input2.equals("sumofdigits")){
+                while(n>0){
+                    rem= n%10;
+                    sum+=rem;
+                    n=n/10;
+                }
+                System.out.print("sum of digits of " + n2 + " is " + sum);
+            }
+        }
+
+        else if(input.equals("fibonacci")){
+            System.out.print("Choose lastnumber/ series: ");
+            input2= sc.next();
+            if(input2.equals("lastnumber")){
+                System.out.println("Enter a number for fibonacci: ");
+                n= sc.nextInt();
+                int a=0, b=1;
+                for(int i=1; i<n-1; i++){
+                    sum=a+b;
+                    a=b;
+                    b=sum;
+                }
+                System.out.print("Last no. of " + n + " digits fibonacci is " + b);
+
+            }
+            else if(input2.equals("series")){
+                System.out.print("Enter a number for fibonacci: ");
+                n= sc.nextInt();
+                int a=0, b=1;
+                System.out.print("Fibonacci : " + a + " " + b + " ");
+                for(int i=1; i<n-1; i++){
+                    sum=a+b;
+                    a=b;
+                    b=sum;
+                    System.out.print(sum+ " ");
+                }
+            }
+        }
+    }
+}
+
+
+Output:
+Choose neon/ perfect/ prime/ operations/ fibonacci: fibonacci
+Choose lastnumber/ series: series
+Enter a number for fibonacci: 8
+Fibonacci : 0 1 1 2 3 5 8 13
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+more advance question :
+
+Problem Statement – Chaman planned to choose a four digit lucky number for his car. His
+lucky numbers are 3,5 and 7. Help him find the number, whose sum is divisible by 3 or 5 or
+7. Provide a valid car number, Fails to provide a valid input then display that number is not a
+valid car number.
+Note : The input other than 4 digit positive number[includes negative and 0] is considered as
+invalid.
+Refer the samples, to read and display the data.
+
+Sample Input 1:
+Enter the car no:1234
+Sample Output 1:
+Lucky Number
+Sample Input 2:
+Enter the car no:1214
+Sample Output 2:
+Sorry its not my lucky number
+Sample Input 3:
+Enter the car no:14
+Sample Output 3:
+14 is not a valid car number
+
+
+
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+
+        int flag=0, sum=0;
+        System.out.print("Enter the car number: ");
+        int num=sc.nextInt();
+        int n=num;
+        int car_num=n;
+        int rem, count=0;
+
+        while(num>0){
+            rem= num%10;
+            if(rem==3 || rem==5 || rem==7){
+                flag=1;
+            }
+            count++;
+            num=num/10;
+        }
+
+        if(count==4){
+            if(flag==1) {
+                while (n > 0) {
+                    sum = sum + n % 10;
+                    n = n / 10;
+                }
+                if (sum % 3 == 0 || sum % 5 == 0 || sum % 7 == 0) {
+                    System.out.println("Lucky number");
+                } else {
+                    System.out.println("Sorry, it's not my lucky number");
+                }
+            }
+            else{
+                System.out.println("Sorry, it's not my lucky number");
+            }
+        }
+
+        else{
+            System.out.println(car_num + " is not a valid car number");
+        }
+
+    }
+}
+
+
+Output:
+Enter the car number: 1312
+Lucky number
+
+--------------------------------------------------------------------
