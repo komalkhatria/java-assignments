@@ -1,0 +1,390 @@
+import java.util.Scanner;
+public class While {
+    public static void main(String[] args){
+	Scanner sc= new Scanner(System.in);
+
+
+1)1---->100 
+
+	int i=1;
+        while(i<=100){
+            System.out.println(i);
+            i++;
+        }
+
+---------------------------------------
+
+2)100--->1 
+
+	int i=100;
+        while(i>=1){
+            System.out.println(i);
+            i--;
+        }
+
+-----------------------------------------
+
+3)1---->100 even numbers print 
+
+	int i=1;
+        while(i<=100){
+            if(i%2==0){
+                System.out.println(i);
+            }
+            i++;
+        }
+
+--------------------------------------------
+
+4) 100--->1 even number 
+
+	int i=100;
+        while(i>=1){
+            if(i%2==0){
+                System.out.println(i);
+            }
+            i--;
+        }
+
+-------------------------------------------------
+
+5)1---->100 odd numbers 
+
+	int i=1;
+        while(i<=100){
+            if(i%2==1){
+                System.out.println(i);
+            }
+            i++;
+        }
+--------------------------------------------------
+
+6)50---->500 number print 
+
+	int i=50;
+        while(i<=500){
+            System.out.println(i);
+            i++;
+        }
+
+-----------------------------------------
+
+7)500--->50 number print 
+
+	int i=500;
+        while(i>=50){
+            System.out.println(i);
+            i--;
+        }
+
+------------------------------------------------
+
+8)50--->1000 even number 
+
+	int i=50;
+        while(i<=1000){
+            if(i%2==0){
+                System.out.println(i);
+            }
+            i++;
+        }
+
+--------------------------------------------------
+
+9)user input 
+34-----67
+
+	int i;
+        System.out.print("Enter a number: ");
+        i= sc.nextInt();
+        if(i<67){
+            while(i<=67){
+                System.out.println(i);
+                i++;
+            }
+        }
+        else{
+            System.out.println("Enter a number less than 67");
+        }
+------------------------------------------------------
+
+10) random two 34-->67
+even number 
+
+	int n1, n2;
+        System.out.print("Enter number 1: ");
+        n1= sc.nextInt();
+        System.out.print("Enter number 2: ");
+        n2= sc.nextInt();
+
+        if(n1>n2){
+            while(n1>=n2){
+                if(n1%2==0){
+                    System.out.println(n1);
+                }
+                n1--;
+            }
+        }
+        else if(n2>n1){
+            while(n1<=n2){
+                if(n1%2==0){
+                    System.out.println(n1);
+                }
+                n1++;
+            }
+        }
+        else{
+            System.out.println("both numbers are same");
+        }
+
+Output:
+Enter number 1: 34
+Enter number 2: 67
+34
+36
+38
+40
+42
+44
+46
+48
+50
+52
+54
+56
+58
+60
+62
+64
+66
+
+-----------------------------------------
+
+11) random two 34-->67
+oddd number 
+
+	int n1, n2;
+        System.out.print("Enter number 1: ");
+        n1= sc.nextInt();
+        System.out.print("Enter number 2: ");
+        n2= sc.nextInt();
+
+        if(n1>n2){
+            while(n1>=n2){
+                if(n1%2==1){
+                    System.out.println(n1);
+                }
+                n1--;
+            }
+        }
+        else if(n2>n1){
+            while(n1<=n2){
+                if(n1%2==1){
+                    System.out.println(n1);
+                }
+                n1++;
+            }
+        }
+        else{
+            System.out.println("both numbers are same");
+        }
+
+Output:
+Enter number 1: 34
+Enter number 2: 67
+35
+37
+39
+41
+43
+45
+47
+49
+51
+53
+55
+57
+59
+61
+63
+65
+67
+
+---------------------------------------------
+
+12)1--->10 sum (addition) 
+
+	int i=1, sum=0;
+        while(i<=10){
+            sum+=i;
+            i++;
+        }
+        System.out.println("Sum: " + sum);
+
+Output:
+Sum: 55
+
+-----------------------------------------------------------
+
+13)2 table print 
+
+	int i=1, table;
+        while(i<=10){
+            table= 2*i;
+            System.out.println("2 * " + i + " = " + table);
+            i++;
+        }
+
+Output:
+2 * 1 = 2
+2 * 2 = 4
+2 * 3 = 6
+2 * 4 = 8
+2 * 5 = 10
+2 * 6 = 12
+2 * 7 = 14
+2 * 8 = 16
+2 * 9 = 18
+2 * 10 = 20
+
+------------------------------------------- 
+
+14)user input table 
+
+	int n, i=1, table;
+        System.out.print("Enter a number: ");
+        n= sc.nextInt();
+        while(i<=10){
+            table= n*i;
+            System.out.println(n + " * " + i + " = " + table);
+            i++;
+        }
+
+Output:
+Enter a number: 4
+4 * 1 = 4
+4 * 2 = 8
+4 * 3 = 12
+4 * 4 = 16
+4 * 5 = 20
+4 * 6 = 24
+4 * 7 = 28
+4 * 8 = 32
+4 * 9 = 36
+4 * 10 = 40
+
+--------------------------------------------------
+
+15)2 3 4 5 6 7 8 9 10 table print (nested while)
+type2: 
+5 ----9 table 
+-------------------------------------------------------
+16)1-->100 (7 and 3 k multiple se divisible ho)
+---------------------------------------------------
+
+17) divide number both 5 and 11 (1---->100)
+
+	int i=1;
+        while(i<=100){
+            if(i%5==0 && i%11==0){
+                System.out.println(i);
+            }
+            i++;
+        }
+
+Output:
+55
+
+--------------------------------------------------------
+
+18)100----1 (5 or 11) 
+
+	int i=100;
+        while(i>=1){
+            if(i%5==0 || i%11==0){
+                System.out.println(i);
+            }
+            i--;
+        }
+
+Output:
+100
+99
+95
+90
+88
+85
+80
+77
+75
+70
+66
+65
+60
+55
+50
+45
+44
+40
+35
+33
+30
+25
+22
+20
+15
+11
+10
+5
+	
+----------------------------------
+19)2 table oppsite print 
+-------------------------------------------------
+20)100--->1 (n or m k multiple se divisible ho) 
+-----------------------------------------------------
+21) 
+constant : 
+2 X 1 =2 
+
+user input : 
+9 X 1 = 9 
+
+-------------------------------------------------------------------------
+22)
+1--->100 even number sum 
+
+	int i=1, sum=0;
+        while(i<=100){
+            if(i%2==0){
+                sum += i;
+            }
+            i++;
+        }
+        System.out.println("Sum of even numbers from 1 to 100: " + sum);
+
+Output:
+Sum of even numbers from 1 to 100: 2550
+
+------------------
+23)
+1---->100 odd number ka sum 
+
+	int i=1, sum=0;
+        while(i<=100){
+            if(i%2==1){
+                sum += i;
+            }
+            i++;
+        }
+        System.out.println("Sum of even numbers from 1 to 100: " + sum);
+
+Output:
+Sum of even numbers from 1 to 100: 2500
+
+
+
+
+
+        }
+    }
+}
