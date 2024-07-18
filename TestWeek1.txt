@@ -1,0 +1,620 @@
+1)
+user input :
+Declare and Initialize Variables:
+Declare an integer variable named age and initialize it with the value 25.
+Declare a double variable named price and initialize it with the value 19.99.
+
+
+public class Test {
+    public static void main(String[] args){
+
+        int age;
+        age=25;
+        double price;
+        price= 19.99f;
+        System.out.println("Age= " + age);
+        System.out.println("Price= " + price);
+    }
+}
+
+Output:
+Age= 25
+Price= 19.989999771118164
+
+--------------------------------------------------------------------
+
+2)
+user input :
+Performing Operations:
+Create two variables, num1 and num2, with values 10 and 5 respectively. Perform addition, subtraction, multiplication, and division operations on them.
+
+
+public class Test {
+    public static void main(String[] args){
+
+        int num1= 10, num2= 5, add, sub, mul, div;
+        add= num1 + num2;
+        sub= num1 - num2;
+        mul= num1 * num2;
+        div= num1 / num2;
+        System.out.println(num1 + " + " + num2 + " = " + add);
+        System.out.println(num1 + " - " + num2 + " = " + sub);
+        System.out.println(num1 + " * " + num2 + " = " + mul);
+        System.out.println(num1 + " / " + num2 + " = " + div);
+    }
+}
+
+Output:
+10 + 5 = 15
+10 - 5 = 5
+10 * 5 = 50
+10 / 5 = 2
+
+--------------------------------------------------------------------
+
+3)
+Boolean Operations:
+Declare two boolean variables, isJavaFun and isCodingEasy, and initialize them with appropriate values.
+
+
+public class Test {
+    public static void main(String[] args){
+
+        boolean isJavaFun;
+        boolean isCodingEasy;
+        isJavaFun= true;
+        isCodingEasy= false;
+        System.out.println("Is java fun? " + isJavaFun);
+        System.out.println("Is Coding Easy? " + isCodingEasy);
+    }
+}
+
+Output:
+Is java fun? true
+Is Coding Easy? false
+
+--------------------------------------------------------------------
+
+4)
+String Length:
+Declare a String variable named text and initialize it with any text.
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+    Scanner sc= new Scanner(System.in);
+    String text;
+    System.out.print("Enter some text: ");
+    text= sc.nextLine();
+    System.out.println(text);
+    }
+}
+
+Output:
+Enter some text: Java is a programming language
+Java is a programming language
+
+--------------------------------------------------------------------
+
+5)
+Even or Odd:
+Write a Java program to check if a given number is even or odd.
+
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+        int num;
+        System.out.print("Enter a number: ");
+        num= sc.nextInt();
+        if(num%2==0){
+            System.out.println(num + " is an even number");
+        }
+        else{
+            System.out.println(num + " is an odd number");
+        }
+    }
+}
+
+Output:
+Enter a number: 246
+246 is an even number
+
+--------------------------------------------------------------------
+
+6)
+Leap Year:
+Create a Java program to determine if a given year is a leap year.
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+        int year;
+        System.out.print("Enter an year: ");
+        year= sc.nextInt();
+        if(year%4==0 && year%100!=0){
+            System.out.println(year + " is a leap year");
+        }
+        else{
+            System.out.println(year + " is not a leap year");
+        }
+    }
+}
+
+Output:
+Enter an year: 2024
+2024 is a leap year
+
+--------------------------------------------------------------------
+
+7)
+Positive, Negative, or Zero:
+Create a Java program to check if a given number is positive, negative, or zero.
+
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+        int num;
+        System.out.print("Enter an integer number: ");
+        num= sc.nextInt();
+        if(num>0){
+            System.out.println(num + " is a positive number");
+        }
+        else if(num<0){
+            System.out.println(num + " is a negative number");
+        }
+        else{
+            System.out.println("number entered is equal to zero");
+        }
+    }
+}
+
+Output:
+Enter an integer number: -12
+-12 is a negative number
+
+--------------------------------------------------------------------
+
+8)
+Grade Calculator:
+Develop a Java program that takes a student's score as input and prints their grade (A, B, C, D, or F).
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+        String name;
+        char grade;
+        int m1, m2, m3, m4, m5;
+        float total, per;
+        System.out.print("Enter name: ");
+        name= sc.next();
+        System.out.println("Enter marks of the respective subjects: ");
+        System.out.print("Hindi: ");
+        m1= sc.nextInt();
+        System.out.print("English: ");
+        m2= sc.nextInt();
+        System.out.print("Math: ");
+        m3= sc.nextInt();
+        System.out.print("Science: ");
+        m4= sc.nextInt();
+        System.out.print("SST: ");
+        m5= sc.nextInt();
+
+        total= m1+m2+m3+m4+m5;
+        per= (total/500) * 100;
+
+        if(per>90){
+            grade= 'A';
+        }
+        else if(per>80 && per<=90){
+            grade= 'B';
+        }
+        else if(per>=65 && per<=80){
+            grade= 'C';
+        }
+        else if(per>50 && per<65){
+            grade= 'D';
+        }
+        else if(per>34 && per<=50){
+            grade= 'E';
+        }
+        else{
+            grade= '-';
+            System.out.println("Fail");
+        }
+        System.out.println();
+        System.out.println("Name: " + name);
+        System.out.println("Total marks out of 500: " + total);
+        System.out.println("Percentage: " + per);
+        System.out.println("Grade: " + grade);
+    }
+}
+
+Output:
+Enter name: Aryan
+Enter marks of the respective subjects: 
+Hindi: 72
+English: 84
+Math: 89
+Science: 91
+SST: 56
+
+--------------------------------------------------------------------
+
+9)
+Print even numbers between 20 and 30 using a while loop.
+
+public class Test {
+    public static void main(String[] args){
+
+        int i=20;
+        while(i<=30){
+            if(i%2==0){
+                System.out.print(i + " ");
+            }
+            i++;
+        }
+    }
+}
+
+Output:
+20 22 24 26 28 30 
+
+--------------------------------------------------------------------
+
+10)
+Calculate the sum of first 100 natural numbers using a for loop.
+
+public class Test {
+    public static void main(String[] args){
+
+        int sum=0;
+        for(int n=1; n<=100; n++){
+            sum+= n;
+        }
+        System.out.println("Sum of first 100 natural numbers: " + sum);
+    }
+}
+
+Output:
+Sum of first 100 natural numbers: 5050
+
+--------------------------------------------------------------------
+
+11)
+Print the Fibonacci series up to 10 terms using a for loop.
+
+
+public class Test {
+    public static void main(String[] args){
+
+        int n1=0, n2=1, sum=0;
+        System.out.print("Fibonacci series: " + n1 + " " + n2 + " ");
+        for(int i=3; i<=10; i++){
+            sum= n1 + n2;
+            System.out.print(sum + " ");
+            n1=n2;
+            n2=sum;
+        }
+    }
+}
+
+Output:
+Fibonacci series: 0 1 1 2 3 5 8 13 21 34
+
+--------------------------------------------------------------------
+
+12)
+Write a program to find the factorial of a number using a while loop.13)
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+        int n, i=1, fact=1;
+        System.out.print("Enter a number: ");
+        n= sc.nextInt();
+        while(i<=n){
+            fact= fact*i;
+            i++;
+        }
+        System.out.println("Factorial of " + n + " is " + fact);
+
+    }
+}
+
+Enter a number: 5
+Factorial of 5 is 120
+
+--------------------------------------------------------------------
+
+14)
+Check if a given number is a palindrome using a using loop.
+
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+                int n, rem, sum=0;
+                System.out.print("Enter a number: ");
+                n= sc.nextInt();
+                int org_n=n;
+                while(n>0){
+                    rem= n%10;
+                    sum= (sum *10) + rem;
+                    n= n/10;
+                }
+                if(org_n==sum) {
+                    System.out.println(org_n + " is a pallindrome number");
+                }
+                else {
+                    System.out.println(org_n + " is not a pallindrome number");
+                }
+
+    }
+}
+
+
+Output:
+Enter a number: 12321
+12321 is a pallindrome number
+
+--------------------------------------------------------------------
+
+15)
+Rock-Paper-Scissors Game:
+Create a Java program for a simple Rock-Paper-Scissors game using if-else if conditions.
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+        String player1="rock", player2;
+        System.out.print("Enter Rock/Paper/Scissors: ");
+        player2= sc.next();
+        if(player2.equals("Rock")){
+            System.out.println("Tie");
+        }
+        else if(player2.equals("Paper")){
+            System.out.println("You win");
+        }
+        else if(player2.equals("Scissors")){
+            System.out.println("You lose");
+        }
+        else{
+            System.out.println("Choose a valid option");
+        }
+
+    }
+}
+
+Output:
+Enter Rock/Paper/Scissors: Paper
+You win
+
+--------------------------------------------------------------------
+
+16)
+Temperature Converter:
+Write a Java program that converts temperature from Celsius to Fahrenheit or vice versa based on user input using if-else statements.
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+        float temp, c, f;
+        String unit;
+        System.out.print("Input temperature in celcius/fahrenheit: ");
+        unit= sc.next();
+        if(unit.equals("celcius")){
+            System.out.print("Enter temperature in celcius: ");
+            temp= sc.nextFloat();
+            f= (temp*9)/5 + 32;
+            System.out.println(temp + "C" + " = " + f + "F");
+        }
+        else if(unit.equals("fahrenheit")){
+            System.out.print("Enter temperature in fahrenheit: ");
+            temp= sc.nextFloat();
+            c= ((temp-32)*5)/9;
+            System.out.println(temp + "F" + " = " + c + "C");
+        }
+
+    }
+}
+
+Output:
+Input temperature in celcius/fahrenheit: fahrenheit
+Enter temperature in fahrenheit: 92
+92.0F = 33.333332C
+
+--------------------------------------------------------------------
+
+17)
+Ticket Reservation System:
+Develop a Java program for a simple ticket reservation system that checks seat availability and age restrictions using if-else if conditions.
+
+18)
+Even or Odd and Positive or Negative:
+Create a Java program that checks if a number is even or odd and positive or negative using nested if-else statements.
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+        int n;
+        System.out.print("Enter a number: ");
+        n= sc.nextInt();
+        if(n%2==0){
+            System.out.println("Even number");
+            if(n>0){
+                System.out.println("Positive number");
+            }
+            else if(n<0){
+                System.out.println("Negative number");
+            }
+
+        }
+        else if(n%2==1){
+            System.out.println("Odd number");
+            if(n>0){
+                System.out.println("Positive number");
+            }
+            else if(n<0){
+                System.out.println("Negative number");
+            }
+        }
+
+    }
+}
+
+Output:
+Enter a number: 23
+Odd number
+Positive number
+
+--------------------------------------------------------------------
+
+
+19)
+Month Name:
+Develop a Java program that takes a month number as input and prints the month's name using switch.
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+        int n;
+        System.out.print("Enter a month number: ");
+        n= sc.nextInt();
+        switch(n){
+            case 1:
+            {
+                System.out.println("January");
+                break;
+            }
+            case 2:
+            {
+                System.out.println("February");
+                break;
+            }
+            case 3:
+            {
+                System.out.println("March");
+                break;
+            }
+            case 4:
+            {
+                System.out.println("April");
+                break;
+            }
+            case 5:
+            {
+                System.out.println("May");
+                break;
+            }
+            case 6:
+            {
+                System.out.println("June");
+                break;
+            }
+            case 7:
+            {
+                System.out.println("July");
+                break;
+            }
+            case 8:
+            {
+                System.out.println("August");
+                break;
+            }
+            case 9:
+            {
+                System.out.println("September");
+                break;
+            }
+            case 10:
+            {
+                System.out.println("October");
+                break;
+            }
+            case 11:
+            {
+                System.out.println("November");
+                break;
+            }
+            case 12:
+            {
+                System.out.println("December");
+                break;
+            }
+            default:
+            {
+                System.out.println("Input mismatch");
+            }
+        }
+
+    }
+}
+
+Output:
+Enter a month number: 6
+June
+
+--------------------------------------------------------------------
+
+20)
+Ticket Pricing:
+Create a Java program to calculate the ticket price based on the age group (child, adult, senior).
+
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+        float tprice=100, discount=0, total;
+        String who;
+        System.out.print("Ticket is for child/adult/senior? ");
+        who= sc.next();
+
+        if(who.equals("child")){
+            discount= 0.20f * tprice;
+        }
+        else if(who.equals("senior")){
+            discount= 0.10f * tprice;
+        }
+        else if(who.equals("adult")){
+            discount= 0;
+        }
+
+        total= tprice - discount;
+        System.out.println();
+        System.out.println("Ticket Price = " + tprice);
+        System.out.println("Discount = " + discount);
+        System.out.println("Amount payable = " + total);
+
+    }
+}
+
+Output:
+Ticket is for child/adult/senior? senior
+
+Ticket Price = 100.0
+Discount = 10.0
+Amount payable = 90.0
