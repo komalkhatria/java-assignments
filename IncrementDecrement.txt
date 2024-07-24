@@ -1,0 +1,454 @@
+Incrementing a variable using the pre-increment operator
+int a = 5;
+int b = ++a;
+System.out.println(a); 
+System.out.println(b); 
+
+
+Output:
+6
+6
+
+-------------------------------------------------------------------
+
+Question 2
+Incrementing a variable using the post-increment operator
+int a = 5;
+int b = a++;
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+
+Output:
+6
+5
+
+-------------------------------------------------------------------
+
+Question 3
+Decrementing a variable using the pre-decrement operator
+int a = 5;
+int b = --a;
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+
+Output:
+4
+4
+
+-------------------------------------------------------------------
+
+Question 4
+Decrementing a variable using the post-decrement operator
+int a = 5;
+int b = a--;
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+
+Output:
+4
+5
+
+-------------------------------------------------------------------
+
+Question 5
+Combining pre-increment and post-increment operators
+int a = 5;
+int b = ++a + a++;
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+
+Output:
+7
+12
+
+-------------------------------------------------------------------
+
+Question 6
+Combining pre-decrement and post-decrement operators
+int a = 5;
+int b = --a + a--;
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+
+Output:
+3
+8
+
+-------------------------------------------------------------------
+
+Question 7
+Using increment in a loop
+int a = 0;
+for (int i = 0; i < 5; ++i) {
+    a++;
+}
+System.out.println(a); // What is the value of 'a'?
+
+Output:
+5
+
+-------------------------------------------------------------------
+
+Question 8
+Using decrement in a loop
+int a = 10;
+for (int i = 0; i < 5; i++) {
+    a--;
+}
+System.out.println(a); // What is the value of 'a'?
+
+
+Output:
+5
+-------------------------------------------------------------------
+
+Question 9
+Complex increment operations
+int a = 5;
+a = a++ + ++a;
+System.out.println(a); // What is the value of 'a'?
+
+Output:
+11
+-------------------------------------------------------------------
+
+Question 10
+Combining increments and arithmetic operations
+
+int a = 5;
+int b = 3;
+int c = a++ + ++b + b++ + ++a;
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+System.out.println(c); // What is the value of 'c'?
+
+Output:
+7
+5
+20
+-------------------------------------------------------------------
+
+Question 11
+Nested increment operations
+int a = 1;
+int b = 2;
+int c = a++ + (++a * ++b);
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+System.out.println(c); // What is the value of 'c'?
+
+Output:
+3
+3
+10
+
+-------------------------------------------------------------------
+
+Question 12
+Multiple pre-increments
+int a = 1;
+int b = ++a + ++a + ++a;
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+
+Output:
+4
+9
+
+-------------------------------------------------------------------
+
+Question 13
+Multiple post-increments
+int a = 1;
+int b = a++ + a++ + a++;
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+
+Output:
+4
+6
+
+-------------------------------------------------------------------
+
+Question 14
+Combining pre-decrement and pre-increment
+int a = 5;
+int b = 3;
+int c = --a + ++b + a + b;
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+System.out.println(c); // What is the value of 'c'?
+
+Output:
+4
+4
+16
+
+-------------------------------------------------------------------
+
+Question 15
+Complex decrement operations
+int a = 5;
+a = a-- - --a;
+System.out.println(a); // What is the value of 'a'?
+
+Output:
+2
+
+-------------------------------------------------------------------
+
+Pre-increment and post-decrement in conditional statements
+int a = 5;
+if (++a > 5 && a-- < 7) {
+    a++;
+}
+System.out.println(a); // What is the value of 'a'?
+
+Output:
+6
+
+-------------------------------------------------------------------
+
+
+
+Post-increment in switch statement
+int a = 5;
+switch (a++) {
+    case 5: a += 10;
+    case 6: a += 20;
+    default: a += 30;
+}
+System.out.println(a); // What is the value of 'a'?
+
+Output:
+65
+
+-------------------------------------------------------------------
+
+Nested loops with increment
+int a = 0;
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        a++;
+    }
+}
+System.out.println(a); // What is the value of 'a'?
+
+Output:
+9
+
+-------------------------------------------------------------------
+
+Increment with logical operators
+int a = 1;
+int b = 1;
+if (++a == 2 && b++ == 1) {
+    a++;
+}
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+
+Output:
+3
+2
+
+-------------------------------------------------------------------
+
+Nested increments and decrements
+int a = 5;
+int b = 3;
+int c = 0;
+
+if (++a > b++) {
+    c = a-- + b++;
+} else {
+    c = ++a - --b;
+}
+
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+System.out.println(c); // What is the value of 'c'?
+
+Output:
+5
+5
+10
+
+-------------------------------------------------------------------
+
+Combining pre-increment and post-decrement in a loop
+int a = 1;
+int b = 2;
+
+for (int i = 0; i < 3; ++i) {
+    a = a++ + --b;
+}
+
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+
+Output:
+1
+-1
+
+-------------------------------------------------------------------
+
+Increment and decrement in a nested if-else
+int a = 5;
+int b = 3;
+int c = 0;
+
+if (++a > 6) {
+    if (--b > 2) {
+        c = a++ + --b;
+    } else {
+        c = --a - ++b;
+    }
+} else {
+    c = a-- + ++b;
+}
+
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+System.out.println(c); // What is the value of 'c'?
+
+Output:
+4
+4
+9
+
+-------------------------------------------------------------------
+
+Using nested increments in a loop
+int a = 1;
+
+for (int i = 0; i < 3; ++i) {
+    a += a++ + i;
+}
+
+System.out.println(a); // What is the value of 'a'?
+
+Output:
+12
+
+-------------------------------------------------------------------
+
+Multiple pre-increments in nested conditionals
+int a = 5;
+int b = 3;
+int c = 0;
+
+if (++a > 6) {
+    if (--b > 2) {
+        c = a-- + --b;
+    } else {
+        c = --a - ++b;
+    }
+} else {
+    c = a++ + ++b;
+}
+
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+System.out.println(c); // What is the value of 'c'?
+
+Output:
+7
+4
+10
+
+-------------------------------------------------------------------
+
+Increment and decrement in a switch statement
+int a = 5;
+int b = 0;
+
+switch (++a) {
+    case 6:
+        b += a++;
+        break;
+    case 7:
+        b -= --a;
+        break;
+    default:
+        b = a;
+}
+
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+
+Output:
+7
+6
+
+-------------------------------------------------------------------
+
+
+Increment and decrement in nested loops
+int a = 0;
+
+for (int i = 0; i < 3; ++i) {
+    for (int j = 0; j < 2; ++j) {
+        a += a++ + i + j;
+    }
+}
+
+System.out.println(a); // What is the value of 'a'?
+
+Output:
+39
+
+-------------------------------------------------------------------
+
+Complex increment and decrement in a loop
+int a = 1;
+
+for (int i = 0; i < 3; ++i) {
+    a = a++ + i;
+    a = a-- - i;
+}
+
+System.out.println(a); // What is the value of 'a'?
+
+Output:
+1
+
+------------------------------------------------------------------------
+
+Using pre-increment and post-decrement in nested conditionals
+int a = 5;
+int b = 3;
+int c = 0;
+
+if (++a > 6) {
+    if (--b > 2) {
+        c = a-- + --b;
+    } else {
+        c = --a - ++b;
+    }
+} else {
+    c = a++ + ++b;
+}
+
+System.out.println(a); // What is the value of 'a'?
+System.out.println(b); // What is the value of 'b'?
+System.out.println(c); // What is the value of 'c'?
+
+
+Output:
+7
+4
+10
+-------------------------------------------------------------------
+
+Nested increments and decrements in a loop
+int a = 0;
+
+for (int i = 0; i < 3; ++i) {
+    a += ++a + i--;
+}
+
+System.out.println(a); // What is the value of 'a'?
+
+Output:
+18
